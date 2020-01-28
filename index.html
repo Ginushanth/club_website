@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DISA</title>
+	<meta charset ="UTF-8">
+    <meta name="author" content="DISA">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="DeGroote's Information Systems Association">
+	<meta name="keywords" content="DISA,AIS,Degroote Information System Association, Degroote, DeGroote Information Systems Association, McMaster, Information Systems, Info System">
+	<meta name="google-site-verification" content="dyM-v83Q2SRN17IdEIZ7VvJhJBf8yCNH6H3jVnR7qaA" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/disa.css">
+	<link href="https://fonts.googleapis.com/css?family=Cabin|Julius+Sans+One|Quicksand|Raleway|Open+Sans|Spectral+SC|Paytone+One|Comfortaa|Ubuntu+Mono|Montserrat:900
+	|Nunito|"
+	rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<script src="scripting/disaScript.js"></script>
+  	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+
+
+</head>
+<body>
+	<!--navigation!-->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+	  <div class="container-fluid" id="navigation">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a href="#background-video"><img src="img/disa/logo4.png" height="55" id="nav-logo"></a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	      <ul class="nav navbar-nav">
+	        <li><a href="#workshops">Workshops</a></li>
+	        <li><a href="#network">Events</a></li>
+	        <li><a href="#about-us">About Us</a></li>
+	        <li><a href="#sponsors">Sponsors</a></li>
+	        <li><a href="#contact-us">Join Us</a></li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+	<!--intro!-->
+	<div class="container-fluid" id="intro">
+		<h1>DeGroote Information Systems Association</h1>
+		<video autoplay muted loop id="background-video">
+			<source src="img/background-video.mp4" type="video/mp4">
+			Your browser does not support HTML5 Videos.
+		</video>
+	</div>
+
+
+
+
+	<!-- work shops section!-->
+	<div class="container-fluid" id="workshops">
+		<div class="row" id="workshops-heading">
+			<div class="col-xs-12">
+				<h1 class="text-center heading">Expand your knowledge</h1>
+			</div>
+			<div class="col-xs-12">
+				<h3 class="text-center" id="workshop-quote">
+				Programming languages are a highly effective device to expand and structure one’s knowledge on Information Technology, and is one of the most prevalent functional components in any software related profession. Our continuous mission to provide training in various programming languages allows students to familiarize themselves with technical lingo, while developing a creative IT mindset that is appreciated and invited by many professionals in the workforce.</h3>
+				<h2 id="workshop-button" class="button">WORKSHOPS &nbsp;&#x25BA;&#x25BA;</h2>
+
+			</div>
+		</div>
+		<!--tablet!-->
+		<div class="container-fluid" id="container">
+			<div id="tablet" class="col-xs-12 col-sm-6">
+				<div id="tablet-screen">
+					<img src="" id="gif">
+					<div id="power-button" onclick="typeWriter()">
+						<p></p>
+					</div>
+					<div id="horizontal-line"></div>
+					<div id="tablet-screen-content">
+						<p id="screen-text">Turn on the tablet! When you run the code, there will be a 50% chance of seeing an accurate representation of you everyday and a 50% chance of seeing the most scariest thing ever. Run the code at your own risk! &#128520;&#128520;&#128520;&#128520;</p>
+					</div>
+					<div id='run-button'>
+						<p>Run</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- this background div is used to make half of the tablet's background color turquiose it is used with jquery !-->
+	<div id="background" class="row"></div>
+	<!--workshop modals, it will display all workshops that are being run !-->
+	<div id="myModal" class="modal">
+	    <div class="modal-content">
+	    	<span class="close">&times;</span>
+	    	<h3 id="workshops-modal-title">Workshops</h3>
+	    	<!--template for each event/workshop!-->
+         	<div class="col-xs-12 container-div">
+						<div class="row">
+							<p class="event-date">November 06, 2018</p>
+							<img class="event-workshop-photo" src="img/disa/azure_workshop.jpg">
+							<p class="event-description">
+								Interested in upping your technical skills on Azure from the best in the game? DeGroote Information Systems Association and Microsoft are collaborating to bring you a Machine Learning Workshop, where cloud experts will walk you through a hands on session of block coding!
+							</p>
+							<p class="read-more-container"><a class="read-more" href="https://www.facebook.com/events/291179741494143/?notif_t=plan_edited&notif_id=1540179055175630" target="_blank">Read More</a></p>
+						</div>
+         		<div class="row">
+         			<p class="event-date">February 13, 2018</p>
+         			<img class="event-workshop-photo" src="img/disa/microsoft.jpg">
+         			<p class="event-description">
+         				Come out to DISA's career building workshop on February 13th at 6:30 PM in DSB A102. Representatives from Microsoft will provide guidance and expertise on how you can advance your career in technology, as well as provide resume tips and tricks. We will also be taking professional headshots for all attendees who are interested in sprucing up their LinkedIn profiles.
+
+         			</p>
+         			<p class="read-more-container"><a class="read-more" href="https://www.facebook.com/events/455316861537149/" target="_blank">Read More</a></p>
+         		</div>
+         		<div class="row">
+         			<p class="event-date">September 14, 2017</p>
+         			<img class="event-workshop-photo" src="img/disa/python_Course.jpg">
+         			<p class="event-description">
+         				Want to learn a different way of thinking? Or how about learning how to program? PhaseOne is hosting a workshop for people
+         				to learn how to program in Python. Swing by and get a crash course in Python! helpful for 1D04 and anyone interested in getting started with programming.
+         			</p>
+         			<p class="read-more-container"><a class="read-more" href="https://www.facebook.com/events/114425362582055/" target="_blank">Read More</a></p>
+         		</div>
+         		<hr class="event-hr">
+         	</div>
+         	<!--template end!-->
+	    </div>
+	</div>
+
+	<!--Network section!-->
+	<div class="container-fluid" id="network">
+		<div class="row">
+			<div class="col-xs-12 col-sm-5" id="heading-networking">
+				<h1> We open <span class="red">pathways.</span></h1>
+				<h3>Expand your opportunities by coming to our organized networking events featuring industry powerhouses and leading tech companies. Our events provide an excellent platform as motivation for passionate individuals to carve a path for themselves in the Information Technology workforce.</h3>
+				<h2 id="events-button" class="button"> OUR EVENTS &nbsp;&#x25BA;&#x25BA;</h2>
+			</div>
+			<div class="col-xs-12 col-sm-1"></div>
+			<div class="col-xs-12 col-sm-6" id="img-networking">
+				<img src="img/disa/networking2.jpg">
+			</div>
+		</div>
+	</div>
+	<!-- this network modal will display all events that are being run !-->
+	<div id="myModal2" class="modal">
+	    <div class="modal-content">
+	    	<span class="close">&times;</span>
+	    	<h3 id="event-modal-title">Events</h3>
+         	<div class="col-xs-12 container-div">
+						<div class="row">
+							<p class="event-date">January 17, 2018</p>
+							<img class="event-workshop-photo" src="img/disa/ready_set_grow.jpg">
+							<p class="event-description">
+								Networking events are crucial to your career. But how do you become effective at networking? It's time for you to master the skill and take your future in your hands! Come and learn how to network through an interactive workshop, led by career coach Luki Danukarjanto, and build meaningful connections.
+							</p>
+							<p class="read-more-container"><a class="read-more" href="https://www.facebook.com/events/2766953266779140/" target="_blank">Read More</a></p>
+						</div>
+						<div class="row">
+							<p class="event-date">November 13, 2018</p>
+							<img class="event-workshop-photo" src="img/disa/DOA_Wine_Mixer.jpg">
+							<p class="event-description">
+								Come out to DOA and DISA’s November Wine Mixer on Tuesday, November 13th in Celebration Hall! We will have catered food and appetizers, as well as THREE guest speakers from Amazon, RBC, and other companies!
+							<p class="read-more-container"><a class="read-more" href="https://www.facebook.com/events/338735943598705/?notif_t=plan_edited&notif_id=1541109779897032" target="_blank">Read More</a></p>
+						</div>
+						<div class="row">
+							<p class="event-date">September 27, 2018</p>
+							<img class="event-workshop-photo" src="img/disa/DISA_Powerhouses.jpg">
+							<p class="event-description">
+								At this event, you will get the chance to hear from a panel of industry leaders and professionals about the impact of innovative technologies in business.
+								A diverse panel of representatives from Deloitte, RBC, and several other companies will be speaking about their journey to success, as well as developments in business & technology relevant to their workplace.
+								Our keynote speech will be delivered by a career coach, who will provide tips on how to network.
+							</p>
+							<p class="read-more-container"><a class="read-more" href="https://www.facebook.com/events/1352977444832859/" target="_blank">Read More</a></p>
+						</div>
+						<div class="row">
+							<p class="event-date">September 19, 2018</p>
+							<img class="event-workshop-photo" src="img/disa/DISA_annual_2018.jpg">
+							<p class="event-description">
+								The DeGroote's Information Systems Association is proud to be running its eigth year at McMaster University. We will be having our
+								Annual General Meeting where we will be showcasing some of the exciting events we have in store for this upcoming year, as well as hosting a brief information session on the field of Information Systems Technology.
+							</p>
+							<p class="read-more-container"><a class="read-more" href="https://www.facebook.com/events/289754331838631/" target="_blank">Read More</a></p>
+						</div>
+         		<div class="row">
+         			<p class="event-date">March 03, 2018</p>
+         			<img class="event-workshop-photo" src="img/disa/MCA.jpg">
+         			<p class="event-description">
+						The McMaster Consulting Association will be hosting a Consulting Conference at McMaster University, in partnership with the Degroote Operations Association, and the Degroote Information Systems Association.
+
+						There will be professional speakers from Deloitte, IBM, and the Chartered Professional Accountants of Ontario, giving insight into the field of consulting.
+         			</p>
+         			<p class="read-more-container"><a class="read-more" href="https://www.facebook.com/events/1807472932661042/" target="_blank">Read More</a></p>
+         		</div>
+         		<div class="row">
+         			<p class="event-date">February 26, 2018</p>
+         			<img class="event-workshop-photo" src="img/disa/Business_Technology_Collide.jpg">
+         			<p class="event-description">
+						At this event, we aim to enlighten students about the developments and trends in technology, as well as IT strategies in the industry and technology-driven business initiatives. Industry professionals from Microsoft, Deloitte, RBC, and several other companies will be present to speak about their journey to success, as well as developments in technology relevant to their workplace. Topics include, but are not limited to, Cloud and Blockchain. There will be prizes and merchandise to give away, along with company swag.
+
+         			</p>
+         			<p class="read-more-container"><a class="read-more" href="https://www.facebook.com/events/214555285768623/" target="_blank">Read More</a></p>
+         		</div>
+         		<div class="row">
+         			<p class="event-date">February 6, 2018</p>
+         			<img class="event-workshop-photo" src="img/disa/BTM_session.jpg">
+         			<p class="event-description">
+         				Come out to our information session to learn more about how the BTM Certificate can help advance your career, and how you can pursue the certificate at McMaster University. Professor Brian Detlor will be present to speak about program requirements of the certificate, along with students who are currently pursuing the certificate. Representatives from ITAC will also be present to explain and answer questions about BTM's history, growth, industry demand and the certification process.
+
+         			</p>
+         			<p class="read-more-container"><a class="read-more" href="https://www.facebook.com/events/1018770841606611/" target="_blank">Read More</a></p>
+         			<p class="read-more-container"><a class="read-more" href="downloads/BTM_Forum.pdf" target="_blank" download>BTM Forum PPT</a></p>
+         			<p class="read-more-container"><a class="read-more" href="downloads/BTM_Certificate.pdf" target="_blank" download>BTM Certifcation PPT</a></p>
+
+         		</div>
+         		<div class="row">
+         			<p class="event-date">January 20, 2018</p>
+         			<img class="event-workshop-photo" src="img/disa/DISA_Women_Conference.png">
+         			<p class="event-description">
+         				Come out to DeGroote Women in Business &amp; DeGroote Information Systems Association's very first conference on Saturday, January 20th from 10 AM to 2 PM in Council Chambers, which will focus on all facets of business! Registration is required. This event is free to all DISA &amp; DWIB members and $5 for non-members.
+         			</p>
+         			<p class="read-more-container"><a class="read-more" href="https://www.facebook.com/events/778474545694714/" target="_blank">Read More</a></p>
+         		</div>
+         		<hr class="event-hr">
+         		<div class="row">
+         			<p class="event-date">November 13, 2017</p>
+         			<img class="event-workshop-photo" src="img/disa/DISA_rising_trends.jpg">
+         			<p class="event-description">
+         				Are you interested in learning about machine learning, cloud servers and the future of artifical intelligence? If so, we got you covered! DISA is hosting a networking event where guest speakers from IBM and McMaster's University Technology Services are going to be talking about the future of Data Science and the new technology McMaster is investing in.
+         			</p>
+         			<p class="read-more-container"><a class="read-more" href="https://www.facebook.com/events/486573111728653/" target="_blank">Read More</a></p>
+         		</div>
+         		<hr class="event-hr">
+         		<div class="row">
+         			<p class="event-date">September 27, 2017</p>
+         			<img class="event-workshop-photo" src="img/disa/DISA_annual.jpg">
+         			<p class="event-description">
+         				The DeGroote's Information Systems Association is proud to be running its seventh year at McMaster University. We will be having our
+         				Annual General Meeting where we will be showcasing some of the exciting events we have in store for this upcoming year, as well as hosting a brief information session on the field of Information Systems Technology.
+         			</p>
+         			<p class="read-more-container"><a class="read-more" href="https://www.facebook.com/events/341770689579424/" target="_blank">Read More</a></p>
+         		</div>
+         		<hr class="event-hr">
+         		<div class="row">
+         			<p class="event-date">March 24, 2017</p>
+         			<img class="event-workshop-photo" src="img/disa/DISA_system_conference.jpg">
+         			<p class="event-description">
+         				Get Ready for McMaster's first Information Systems Conference! Firms attendind include: IBM, Deloitte, BRUHA, McMaster University and Conestoga Cold Storage. This is a great chance to enhance your everyday business skills and a fantastic networking opportunity! There will also be FREE FOOD and refreshments available!
+         			</p>
+         			<p class="read-more-container"><a class="read-more" href="https://www.facebook.com/events/820743184742975/" target="_blank">Read More</a></p>
+         		</div>
+         		<hr class="event-hr">
+         		<div class="row">
+         			<p class="event-date">October 21, 2016</p>
+         			<img class="event-workshop-photo" src="img/disa/DISA_IBM_BRUHA.jpg">
+         			<p class="event-description">
+         				IBM and BRUHA are coming to McMaster! IBM will be coming in to speak about a few things:
+				1. Tech Trends, Current use of Watson/Cloud Computing, How the digital age has shaped start up and businesses/uses of tech trends for companies like Bruha/How to effectively maximize resources
+				2. Tech Entrepreneurial
+				3. Leadership Management/Startup Management
+         			</p>
+         			<p class="read-more-container"><a class="read-more" href="https://www.facebook.com/events/181921215586590/ target="_blank">Read More</a></p>
+         		</div>
+         	</div>
+	    </div>
+	</div>
+
+
+	<div class="container-fluid" id="about-us">
+		<div class='row' >
+			<div class='col-xs-12'>
+				<h1 class="text-center heading">We help students explore the world of information technology</h1>
+
+			</div>
+		</div>
+		<div class='row'>
+			<div class="col-xs-12">
+				<p class="who-we-are">Our association stands proud with its dedication to promote continuous academic prowess within students through our support. Since 2010, DISA has been thriving to deliver exceptional practical tools for individuals that are willing to pursue personal and professional growth with our specialized understanding and awareness for the field of information systems</p>
+			</div>
+		</div>
+		<!-- the quote is an image overlay on each individual profile card !-->
+		<div class="row photos">
+			<div class="xs-12 semi-small-6 sm-4 lg-2 card" id='president'>
+				<img src='img/disa/ipsita_2018.jpg' class="exec-photos">
+				<h3 class="exec-title">Ipsita Ralhan <hr class="card-hr">President</h3>
+				<p class="quote">Ipsita is entering her third year in the Honours Bachelor of Commerce program at the DeGroote School of Business. This past summer, she had the opportunity to intern at TD Bank. For the 2017/2018 year, she strives to promote Information Systems Technology at McMaster University and provide students with tools and opportunities for personal and professional growth. She is looking forward to building the DISA brand, catalyzing change and initiating innovation within the association. In her free time, she enjoys baking, playing video games, and travelling.</p>
+			</div>
+
+			<div class="xs-12 semi-small-6 sm-4 lg-2 card margin-sm">
+				<img src='img/disa/ryan.jpg' class="exec-photos">
+				<h3 class="exec-title">Ryan Zou<hr class="card-hr">VP of Internal Relations</h3>
+				<p class="quote">Hailing from Richmond Hill, Toronto, Ryan is entering his second year of commerce at the degroote school of business. This past summer, he had the opportunity to intern at Now Creative Group, a media and advertising agency. With a knack for design and always trying to find better ways of doing things, Ryan is passionate about developing the DISA brand. He is looking forward to working with this year's team and promoting DISA in fun and creative ways. IN his free time, you can find Ryan exploring new hiking trails in hamilton and discovering new shows to binge watch. </p>
+			</div>
+			<div class="xs-12 semi-small-6 sm-4 lg-2 card">
+				<img src='img/disa/alwin_2018.jpg' class="exec-photos">
+				<h3 class="exec-title">Alwin Lee<hr class="card-hr">VP of Finance</h3>
+				<p class="quote">Alwin is a fourth-year student studying Commerce at McMaster University with an interest in pursuing a career in Information Systems. His involvement as the Vice President of Finance with the DISA and past Internship placement at Thales has developed his desire to explore this potential career path. Alwin is responsible of managing the general financial matters of the club to allow DISA to host events and acquires resources for the general members. In his free time, you can usually find him playing basketball in DBAC.
+				</p>
+
+			</div>
+			<div class="xs-12 semi-small-6 sm-4 lg-2 card">
+				<img src='img/disa/zain.jpg' class="exec-photos">
+				<h3 class="exec-title">Zain Hassan<hr class="card-hr">Social Media Director</h3>
+				<p class="quote"></p>
+			</div>
+			<div class="xs-12 semi-small-6 sm-4 lg-2 card margin-sm">
+				<img src='img/disa/farhat_2018.jpg' class="exec-photos">
+				<h3 class="exec-title">Farhat Jiwa<hr class="card-hr">Communications Lead</h3>
+				<p class="quote">Farhat is in his last year in Economics at McMaster University. This upcoming year Farhat plans to spread the awareness of DISA while maintaining the importance of being involved to incoming first years. In his spare time Farhat enjoys spending time with his friends, playing videos games and working out.
+</p>
+			</div>
+			<div class="xs-12 semi-small-6 sm-4 lg-2 card margin-lg" >
+				<img src='img/disa/brooke.jpg' class="exec-photos">
+				<h3 class="exec-title">Brooke Budisa<hr class="card-hr">Design Lead</h3>
+				<p class="quote"></p>
+			</div>
+			<div class="xs-12 semi-small-6 sm-4 lg-2 card">
+				<img src='img/disa/mark_2018.jpg' class="exec-photos">
+				<h3 class="exec-title">Mark Mai<hr class="card-hr">Marketing Associate</h3>
+				<p class="quote">As a third year commerce student from Scarborough, you can often find the almost-6-foot-kid-nba-prospect Mark at the ball court. This upcoming year Mark looks to alley-oop DISA into the top of the business clubs. With a creative and crafty wit, Mark will take his talents to the marketing team and encourage students to come and grasp what information systems are really about. </p>
+			</div>
+			<div class="xs-12 semi-small-6 sm-4 lg-2 card margin-sm">
+				<img src='img/disa/ginu_2018.jpg' class="exec-photos">
+				<h3 class="exec-title">Ginu Suriyakumaran <hr class="card-hr">VP of Technology</span></h3>
+				<p class="quote">Ginu is a 4th year Computer Engineering and Management student. Ginu's goal for this year to allow students opportunities
+				to grow in the field of information technology by providing them workshops to learn a variety of programming languages and a different way of thinking. When he's not trying to take his future seriously, you can find Ginu binge watching TV shows/movies, playing video games/sports, in the gym or asleep.</p>
+			</div>
+			<div class="xs-12 semi-small-6 sm-4 lg-2 card">
+				<img src='img/disa/amitesh_2018.jpg' class="exec-photos">
+				<h3 class="exec-title">Amithesh Thind<hr class="card-hr">Technology Associate</h3>
+				<p class="quote">Amitesh is a 3rd year Computer Engineering and Society student, minoring in Community Engagement. He is passionate about technology and loves learning about its advancements. His goal for this year is to help bussiness students expand their technical accumen.He hopes to accomplish this by hosting programming workshops that will give students a platform on which they can build upon. During his leisure time, Amitesh enjoys playing basketball, watching random videos about astronomy and jamming to 2Pac and Kendrick.</p>
+			</div>
+			<div class="xs-12 semi-small-6 sm-4 lg-2 card">
+				<img src='img/disa/kristal_2018.jpg' class="exec-photos">
+				<h3 class="exec-title">Kristal Ramnarine<hr class="card-hr">VP of Logistics</h3>
+				<p class="quote">Kristal is a third year student in the Honours Commerce program at McMaster University. With a focus on Information Systems and a double minor in Sustainability and Innovation, she aspires to work within the field of Project Management and eHealth.This past summer, she worked as a Health Informatics Assistant. You can always catch Kristal at Tim Horton's, listening to Tory Lanez's new rap album, or looking for a way to contribute towards environmental stewardship.This year, Kristal will strive towards reaching a wide range of students interested in technology and helping them discover their passions by hosting phenomenal events consisting of top-notch professionals.</p>
+			</div>
+			<div class="xs-12 semi-small-6 sm-4 lg-2 card margin-sm margin-lg" >
+				<img src='img/disa/josh.jpg' class="exec-photos">
+				<h3 class="exec-title">Josh Morgan<hr class="card-hr">VP of Marketing</h3>
+				<p class="quote"></p>
+			</div>
+		</div>
+	</div>
+	<!-- sponsors!-->
+	<div class="container-fluid" id="sponsors">
+		<div class="row">
+			<h1 class="heading text-center"> Our Sponsors</h1>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<p id="funding-statement">For the 2017/2018 year, we received funding of $1,500 from the Information Systems Area in the faculty of Business</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-10 col-sm-3">
+				<img src="img/disa/microsoft_logo.png" class="sponsor-logos">
+			</div>
+			<div class="col-xs-10 col-sm-3">
+				<img src="img/disa/degroote.png" class="sponsor-logos">
+			</div>
+			<div class="col-xs-10 col-sm-3">
+				<img src="img/disa/dcs.png" class="sponsor-logos">
+			</div>
+			<div class="col-xs-10 col-sm-3">
+				<img src="img/disa/MSU.jpg" class="sponsor-logos">
+			</div>
+		</div>
+	</div>
+	<!-- contact us section !-->
+	<div class="container-fluid slide" id="contact-us">
+		<div class="row">
+			<h1 class="heading text-center">Become a member</h1>
+		</div>
+		<div class="row">
+			<h3 class="text-center">Come join the DeGroote's Information Systems Association and expand your professional horizon. Allow our dedicated team guide you through the process of greater personal growth and amazing career achievements by utilizing our association's workshops and numerous strategic lessons aimed for your individual needs. Join us today and take a giant leap forward in your path to success. Membership prices are only $5 for first years and $10 for upper years. Don’t wait, join us now! For any questions email us at ais@mcmaster.ca or follow us on any of these social media platforms below.</h3>
+		</div>
+		<div class="row">
+			<div id="social-media">
+				<i class="fa icon"><p><a href="https://www.facebook.com/DeGrooteAIS/" target="_blank">&#xf09a;</a></p></i>
+				<i class="fa icon"><p><a href="https://www.instagram.com/mcmasterdisa/" target="_blank">&#xf16d;</a></p></i>
+				<i class="fa icon"><p><a href="https://www.linkedin.com/company/25014502/" target="_blank">&#xf0e1;</a></p></i>
+			</div>
+		</div>
+		<div class="row" id="footer">
+			<h3>&copy; &nbsp;Degroote's Information Systems Association 2019</h3>
+		</div>
+	</div>
+
+</body>
+</html>
